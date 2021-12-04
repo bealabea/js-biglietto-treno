@@ -11,7 +11,6 @@ journey = parseInt(journey);
 
 //creo una variabile per il prezzo pieno a cui indico di non superare i due decimali
 let price = 0.21 * journey;
-let num = price.toFixed(2);
 
 // totale Km
 document.getElementById('total').innerHTML += `${journey} Km!`;
@@ -26,7 +25,7 @@ if (age < 18) {
     outputHtml.style.color = "Green";
 }
 
-outputHtml.innerHTML = `${price} €`;
+outputHtml.innerHTML = `${price.toFixed(2)} €`;
 
 //  funzione per ricaricare la pagina
 function RefreshWindow()
