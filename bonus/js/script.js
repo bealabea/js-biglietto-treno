@@ -19,10 +19,10 @@ document.getElementById('total').innerHTML += `${journey} Km!`;
 //altrimenti se avrà più di 65 anni avrà lo sconto del 40%,
 if (age < 18) {
     price = price - (price * 0.2);
-    outputHtml.style.color = "Green";
 } else if (age > 65) {
-    price = price - (price * 0.4);
-    outputHtml.style.color = "Green";
+    price = price - (price * 0.4);  
+} else {
+    outputHtml.style.color= "Black";
 }
 
 outputHtml.innerHTML = `${price.toFixed(2)} €`;
