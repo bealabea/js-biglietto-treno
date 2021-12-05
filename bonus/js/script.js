@@ -27,8 +27,3 @@ if (age < 18) {
 
 outputHtml.innerHTML = `${price.toFixed(2)} €`;
 
-//  funzione per ricaricare la pagina
-function RefreshWindow()
-{
-         window.location.reload(true);
-}
